@@ -27,7 +27,7 @@
                 Clientes
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Registrar Cliente</a></li>
+                <li><a class="dropdown-item" href="../registrar_cliente/">Registrar Cliente</a></li>
                 <li><a class="dropdown-item" href="#">Ver Clientes</a></li>
                 
                 

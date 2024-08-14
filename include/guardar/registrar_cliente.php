@@ -6,19 +6,20 @@ include('../../conexion/conexion.php');
 $firstName = $_POST['firstName'];
 $lastName = $_POST['lastName'];
 $documentType = $_POST['documentType'];
+$documentValue = $_POST['documentValue'];
 $birthDate = $_POST['birthDate'];
 $maritalStatus = $_POST['maritalStatus'];
 
 // Preparar la consulta SQL
-$sql = "INSERT INTO clientes (nombres, apellidos, tipo_documento, fecha_nacimiento, estado_civil) 
-        VALUES (?, ?, ?, ?, ?)";
+$sql = "INSERT INTO clientes (nombres, apellidos, tipo_documento, valor_documento, fecha_nacimiento, estado_civil) 
+        VALUES (?, ?, ?, ?, ?, ?)";
 
 // Preparar la declaración
 $stmt = $conn->prepare($sql);
 
 if ($stmt) {
     // Bind los parámetros
-    $stmt->bind_param("sssss", $firstName, $lastName, $documentType, $birthDate, $maritalStatus);
+    $stmt->bind_param("ssssss", $firstName, $lastName, $documentType, $documentValue, $birthDate, $maritalStatus);
     
     // Ejecutar la declaración
     if ($stmt->execute()) {
