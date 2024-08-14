@@ -2,9 +2,10 @@
 // Incluir el archivo de conexión
 include('../conexion/conexion.php');
 
-include '../parts/body_start.php';
-include '../parts/datatable.php';
-include '../parts/nav.php';
+include ('../parts/body_start.php');
+include ('../parts/datatable.php');
+include ('../parts/nav.php');
+
 ?>
 
 <div class="container mt-5">
@@ -66,5 +67,5 @@ include '../parts/nav.php';
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 <?php
-include '../parts/body_end.php';
+include ('../parts/body_end.php');
 ?>
