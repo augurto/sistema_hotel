@@ -23,6 +23,12 @@ include('../parts/nav.php');
                 </div>
             </div>
 
+            <div class="input-group">
+  <span class="input-group-text">First and last name</span>
+  <input type="text" aria-label="First name" class="form-control">
+  <input type="text" aria-label="Last name" class="form-control">
+</div>
+
             <div class="form-group mb-3">
                 <label for="documentType">Tipo de Documento</label>
                 <div class="input-group">
@@ -33,15 +39,12 @@ include('../parts/nav.php');
                         <option value="ce">C.E.</option>
                         <option value="pasaporte">Pasaporte</option>
                     </select>
+                    <input type="text" class="form-control" id="documentValue" name="documentValue" placeholder="Ingrese el número del documento" required>
+
                 </div>
             </div>
 
-            <div class="form-group mb-3">
-                <label for="documentValue">Número de Documento</label>
-                <div class="input-group">
-                    <input type="text" class="form-control" id="documentValue" name="documentValue" placeholder="Ingrese el número del documento" required>
-                </div>
-            </div>
+           
 
             <div class="form-group mb-3">
                 <label for="birthDate">Fecha de Nacimiento</label>
