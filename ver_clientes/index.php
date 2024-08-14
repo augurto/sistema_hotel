@@ -2,7 +2,7 @@
 // Incluir el archivo de conexión
 include('../conexion/conexion.php');
 
-// Inicializar la variable de búsqueda
+
 $searchQuery = '';
 if (isset($_GET['search'])) {
     $searchQuery = $_GET['search'];
@@ -82,4 +82,4 @@ include('../parts/nav.php');
 
 <?php
 include('../parts/body_end.php');
-?>
+?> 
