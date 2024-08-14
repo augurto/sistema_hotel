@@ -6,7 +6,7 @@ include('../parts/nav.php');
 
 <div class="container mt-5">
         <h2>Registrar Cliente</h2>
-        <form action="guardar/registrar_cliente.php" method="post">
+        <form action="../include/guardar/registrar_cliente.php" method="post">
             <div class="form-group mb-3">
                 <label for="firstName">Nombres</label>
                 <div class="input-group">
@@ -69,7 +69,7 @@ include('../parts/nav.php');
         </form>
     </div>
 
-    
+
 <?php
 include('../parts/body_end.php');
 ?>
