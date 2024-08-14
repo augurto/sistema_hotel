@@ -2,9 +2,10 @@
 // Incluir el archivo de conexión
 include('../conexion/conexion.php');
 
-include ('../parts/body_start.php');
-include ('../parts/datatable.php');
-include ('../parts/nav.php');
+include('../parts/body_start.php');
+include('../parts/datatable.php');
+include('../parts/nav.php');
+
 
 ?>
 
