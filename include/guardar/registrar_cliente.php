@@ -1,6 +1,6 @@
 <?php
 // Incluir el archivo de conexión
-include('../../conexion/conexion.php');
+include('./conexion/conexion.php');
 
 // Obtener los datos del formulario
 $firstName = $_POST['firstName'];
@@ -23,7 +23,9 @@ if ($stmt) {
     
     // Ejecutar la declaración
     if ($stmt->execute()) {
-        echo "Cliente registrado exitosamente.";
+        // Redireccionar a la URL después de guardar
+        header('Location: https://estrella.adfusion.click/ver_clientes/');
+        exit(); // Asegurarse de que el script se detiene después de la redirección
     } else {
         echo "Error al registrar el cliente: " . $stmt->error;
     }
