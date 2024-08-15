@@ -6,7 +6,7 @@ include('../parts/nav.php');
 
 <div class="container mt-5">
         <h2>Registrar Habitación</h2>
-        <form action="guardar/registrar_habitacion.php" method="post" enctype="multipart/form-data">
+        <form action="../include/guardar/registrar_habitacion.php" method="post" enctype="multipart/form-data">
             <!-- Número de Habitación -->
             <div class="form-group mb-3">
                 <label for="roomNumber">Número de Habitación</label>
@@ -76,7 +76,7 @@ include('../parts/nav.php');
         </form>
     </div>
 
-    
+
 <?php
 include ('../parts/body_end.php');
 ?>
