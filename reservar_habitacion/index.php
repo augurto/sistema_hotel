@@ -18,7 +18,7 @@ include('../parts/nav.php');
     <h2>Reservar Habitación</h2>
 
     <!-- Formulario de reserva -->
-    <form action="guardar/registrar_reserva.php" method="post">
+    <form action="../include/guardar/registrar_reservacion.php" method="post">
         <div class="form-group">
             <label for="cliente">Cliente</label>
             <select class="form-control" id="cliente" name="id_cliente" required>
