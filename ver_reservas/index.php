@@ -1,6 +1,6 @@
 <?php
 // Incluir el archivo de conexión
-include('./conexion/conexion.php');
+include('../conexion/conexion.php');
 
 // Obtener la fecha y hora actual en Perú para la búsqueda de reservas
 date_default_timezone_set('America/Lima');
